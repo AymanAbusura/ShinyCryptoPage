@@ -1,0 +1,86 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 646" width="800" height="646">
+	<title>home</title>
+	<defs>
+		<linearGradient id="g1" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(321.1,0,0,100.558,218.1,473.3)">
+			<stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+			<stop offset=".2" stop-color="#94e7ed" stop-opacity=".4"/>
+			<stop offset=".4" stop-color="#44d5e1" stop-opacity=".7"/>
+			<stop offset=".5" stop-color="#12cad9" stop-opacity=".9"/>
+			<stop offset=".6" stop-color="#00bbca" stop-opacity=".9"/>
+			<stop offset=".7" stop-color="#009eab" stop-opacity=".8"/>
+			<stop offset=".8" stop-color="#006f78" stop-opacity=".6"/>
+			<stop offset=".9" stop-color="#002f33" stop-opacity=".2"/>
+			<stop offset="1" stop-color="#000000" stop-opacity="0"/>
+		</linearGradient>
+		<linearGradient id="g2" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0,-639.8,184.464,0,650.2,655.9)">
+			<stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+			<stop offset=".2" stop-color="#94e7ed" stop-opacity=".4"/>
+			<stop offset=".4" stop-color="#44d5e1" stop-opacity=".7"/>
+			<stop offset=".5" stop-color="#12cad9" stop-opacity=".9"/>
+			<stop offset=".6" stop-color="#00bbca" stop-opacity=".9"/>
+			<stop offset=".7" stop-color="#009eab" stop-opacity=".8"/>
+			<stop offset=".8" stop-color="#006f78" stop-opacity=".6"/>
+			<stop offset=".9" stop-color="#002f33" stop-opacity=".2"/>
+			<stop offset="1" stop-color="#000000" stop-opacity="0"/>
+		</linearGradient>
+		<linearGradient id="g3" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0,-611.9,323.533,0,189.2,658.9)">
+			<stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+			<stop offset=".3" stop-color="#94e7ed" stop-opacity=".4"/>
+			<stop offset=".5" stop-color="#44d5e1" stop-opacity=".7"/>
+			<stop offset=".6" stop-color="#12cad9" stop-opacity=".9"/>
+			<stop offset=".7" stop-color="#00c6d6" stop-opacity="1"/>
+			<stop offset=".8" stop-color="#009eab" stop-opacity=".8"/>
+			<stop offset=".9" stop-color="#002f33" stop-opacity=".2"/>
+			<stop offset="1" stop-color="#000000" stop-opacity="0"/>
+		</linearGradient>
+		<radialGradient id="g4" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(41.6,0,0,41.6,62.8,209.3)">
+			<stop offset="0" stop-color="#178f90" stop-opacity=".8"/>
+			<stop offset=".2" stop-color="#178f90" stop-opacity=".6"/>
+			<stop offset=".3" stop-color="#178f90" stop-opacity=".4"/>
+			<stop offset=".5" stop-color="#178f90" stop-opacity=".2"/>
+			<stop offset=".6" stop-color="#178f90" stop-opacity="0"/>
+			<stop offset=".8" stop-color="#178f90" stop-opacity="0"/>
+			<stop offset="1" stop-color="#178f90" stop-opacity="0"/>
+		</radialGradient>
+		<radialGradient id="g5" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(41.6,0,0,41.6,373.8,523.3)">
+			<stop offset="0" stop-color="#178f90" stop-opacity=".8"/>
+			<stop offset=".2" stop-color="#178f90" stop-opacity=".6"/>
+			<stop offset=".3" stop-color="#178f90" stop-opacity=".4"/>
+			<stop offset=".5" stop-color="#178f90" stop-opacity=".2"/>
+			<stop offset=".6" stop-color="#178f90" stop-opacity="0"/>
+			<stop offset=".8" stop-color="#178f90" stop-opacity="0"/>
+			<stop offset="1" stop-color="#178f90" stop-opacity="0"/>
+		</radialGradient>
+		<radialGradient id="g6" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(41.6,0,0,41.6,742.8,353.3)">
+			<stop offset="0" stop-color="#178f90" stop-opacity=".8"/>
+			<stop offset=".2" stop-color="#178f90" stop-opacity=".6"/>
+			<stop offset=".3" stop-color="#178f90" stop-opacity=".4"/>
+			<stop offset=".5" stop-color="#178f90" stop-opacity=".2"/>
+			<stop offset=".6" stop-color="#178f90" stop-opacity="0"/>
+			<stop offset=".8" stop-color="#178f90" stop-opacity="0"/>
+			<stop offset="1" stop-color="#178f90" stop-opacity="0"/>
+		</radialGradient>
+	</defs>
+	<style>
+		.s0 { fill: none;stroke: url(#g1);stroke-miterlimit:10;stroke-width: 2 } 
+		.s1 { fill: none;stroke: url(#g2);stroke-miterlimit:10;stroke-width: 2 } 
+		.s2 { fill: none;stroke: url(#g3);stroke-miterlimit:10;stroke-width: 2 } 
+		.s3 { fill: url(#g4) } 
+		.s4 { fill: url(#g5) } 
+		.s5 { fill: url(#g6) } 
+		.s6 { fill: #bbfffd } 
+	</style>
+	<g>
+		<g id="_Слой_2">
+			<path class="s0" d="m219 423c0 0 48 97 156 100 108 3 163.4-100 163.4-100"/>
+			<path class="s1" d="m558 655c0 0 178.4-95.9 183.9-311.6 5.5-215.8-183.9-326.4-183.9-326.4"/>
+			<path class="s2" d="m351 48c0 0-106.6-3.1-192 52-73.8 47.6-128 145.6-130.5 242.4-5.4 208.7 180.1 315.6 180.1 315.6"/>
+			<path fill-rule="evenodd" class="s3" d="m40 292c-38.7 0-70-31.3-70-70 0-38.7 31.3-70 70-70 38.7 0 70 31.3 70 70 0 38.7-31.3 70-70 70z"/>
+			<path fill-rule="evenodd" class="s4" d="m351 606c-38.7 0-70-31.3-70-70 0-38.7 31.3-70 70-70 38.7 0 70 31.3 70 70 0 38.7-31.3 70-70 70z"/>
+			<path fill-rule="evenodd" class="s5" d="m720 436c-38.7 0-70-31.3-70-70 0-38.7 31.3-70 70-70 38.7 0 70 31.3 70 70 0 38.7-31.3 70-70 70z"/>
+			<path fill-rule="evenodd" class="s6" d="m64 215c-3.3 0-6-2.7-6-6 0-3.3 2.7-6 6-6 3.3 0 6 2.7 6 6 0 3.3-2.7 6-6 6z"/>
+			<path fill-rule="evenodd" class="s6" d="m375 529c-3.3 0-6-2.7-6-6 0-3.3 2.7-6 6-6 3.3 0 6 2.7 6 6 0 3.3-2.7 6-6 6z"/>
+			<path fill-rule="evenodd" class="s6" d="m742 359c-3.3 0-6-2.7-6-6 0-3.3 2.7-6 6-6 3.3 0 6 2.7 6 6 0 3.3-2.7 6-6 6z"/>
+		</g>
+	</g>
+</svg>
