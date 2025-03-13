@@ -96,7 +96,7 @@ section{
 	padding-block:30px
 }
 section.p0{
-	padding-block:30px 0
+	padding-block: 100px 0;
 }
 /*.bg{
 	background:url("../assets/");
@@ -110,7 +110,8 @@ section.p0{
 	font-size:24px;
 	line-height:1.2;
 	font-weight:600;
-	color:#1b3942
+	color: #fff;
+/*	color: #1b3942;*/
 }
 .title-2 span,.title-form span,img{
 	display:block
@@ -131,10 +132,11 @@ section.p0{
 	margin:0 auto 20px
 }
 .txt{
-	color:#1b3942;
+	color: #fff;
 	font-size:16px;
-	font-weight:500;
-	line-height:1.5
+	font-weight:400;
+	line-height:1.5;
+	text-align: left;
 }
 .accent{
 	color:#fd8704
@@ -537,7 +539,8 @@ textarea{
 }
 .block__img{
 	width:100%;
-	max-width:600px
+	max-width: 500px;
+/*	max-width:600px*/
 }
 .block__content{
 	width:100%
@@ -589,10 +592,10 @@ textarea{
 	order:4
 }
 .block__title{
-	color:#1b3942;
-	font-size:20px;
-	font-weight:600;
-	margin-bottom:10px
+	color: #fff;
+	font-size: 17px;
+	font-weight: 400;
+	margin-bottom: 10px
 }
 .mt{
 	margin-block:20px
@@ -642,7 +645,7 @@ textarea{
 .holder{
 	overflow:hidden;
 	padding:0;
-	background:#fd8704
+/*	background: #fd8704;*/
 }
 .holder__container,.holder__content{
 	display:-webkit-box;
@@ -652,7 +655,7 @@ textarea{
 .holder__content{
 	-webkit-box-flex:0;
 	-ms-flex:0 0 100%;
-	flex:0 0 100%
+	flex:0 0 100%;
 }
 .holder__container{
 	-webkit-box-align:center;
@@ -767,8 +770,8 @@ textarea{
 	-webkit-box-pack:center;
 	-ms-flex-pack:center;
 	justify-content:center;
-	background:#01c9ee;
-	border-radius:50%
+	border: 1px solid #666;
+	border-radius:50%;
 }
 .icon-big{
 	width:48px;
@@ -796,9 +799,9 @@ textarea{
 	word-break:normal;
 	gap:10px
 }
-.benefit{
+/*.benefit{
 	padding-top:0
-}
+}*/
 .benefit__col,.benefit__row{
 	display:-webkit-box;
 	display:-ms-flexbox;
@@ -819,7 +822,7 @@ textarea{
 .benefit__col{
 	-webkit-box-align:center;
 	-ms-flex-align:center;
-	align-items:center;
+	align-items:left;
 	-webkit-box-pack:start;
 	-ms-flex-pack:start;
 	justify-content:flex-start;
@@ -827,9 +830,12 @@ textarea{
 	gap:10px
 }
 .benefit__col p{
-	color:#191d26;
-	font-weight:600;
-	line-height:1.5
+	font-size: 18px;
+	color: #fff;
+	font-weight: 600;
+	line-height: 1.5;
+	text-transform: uppercase;
+	margin-top: 20px;
 }
 .footer{
 	background-color: #000;
@@ -1110,9 +1116,9 @@ table p+p{
 }
 @media only screen and (min-width:991.98px){
 	.txt{
-		font-size:20px
+		font-size: 15px;
 }
-	.benefit__col p,.center{
+	.center{
 		text-align:center
 }
 	.header .flex-bl{
@@ -1165,6 +1171,7 @@ table p+p{
 	.home__body{
 		padding-bottom:0;
 		width: 100%;
+		align-self: center;
 /*		width: 70%;*/
 }
 	.home__form{
@@ -1183,7 +1190,8 @@ table p+p{
 	.block__row .block__col{
 		width:50%;
 		-ms-flex-item-align:center;
-		align-self:center
+		text-align: center;
+/*		align-self: center;*/
 }
 	.block__row,.block__row-1{
 		gap:30px
@@ -1218,11 +1226,15 @@ table p+p{
 	.holder{
 		display:-webkit-box;
 		display:-ms-flexbox;
-		display:flex
+		display:flex;
+		padding-block: 100px 0;
 }
 	.holder__body{
-		padding:30px 20px 30px 0;
-		width:52%
+		display: flex;
+    	flex-direction: column;
+    	align-items: center;
+		padding: 30px 20px 30px 0;
+		width: 60%;
 }
 	.holder__image{
 		position:relative;
@@ -1465,8 +1477,8 @@ input[type="text"]:focus,input[type="email"]:focus,input[type="tel"]:focus {
 	position: absolute;
 }
 .form__wrapper-loader.loader,.api-error.loader {
-/*	display: block;*/
-	display: none;
+	display: block;
+/*	display: none;*/
 }
 .iti--separate-dial-code.iti--show-flags .iti__selected-dial-code {
 	margin-left: 6px;

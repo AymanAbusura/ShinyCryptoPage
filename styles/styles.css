@@ -5,9 +5,7 @@
     font-weight: bold;
 }
 
-.different {
-	color: #00d0e0;
-}
+.different { color: #00d0e0; }
 
 .no-scroll {
     height: 100vh;
@@ -16,15 +14,17 @@
 
 .bg-video {
     position: absolute;
-    top: 50%;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    object-fit: cover;
+   /* top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     min-width: 100%;
     min-height: 100%;
     width: 1920px;
-    height: 1080px;
-    z-index: -1;
-    object-fit: cover;
+    height: 1080px;*/
 }
 
 /*@media (-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi){
@@ -158,20 +158,16 @@
     height: auto;
 }
 
-.form__div {
+.form__bg-mobile {
 	padding: 20px 40px 20px 22px;
     position: absolute;
-    bottom: 8rem;
+    bottom: 3rem;
     left: 1rem;
 }
 
-.form__info ul {
-	background: transparent!important;
-}
+.form__info ul { background: transparent!important; }
 
-.form-group-btn {
-	padding: 10px;
-}
+.form-group-btn { padding: 10px; }
 
 .line {
     background:url("../assets/line.webp");
@@ -179,13 +175,501 @@
 	background-position:top center;
 	background-repeat:no-repeat;
 	width: 100%;
-    height: 100px;
+    min-height: 86px;
     position: relative;
     z-index: 2;
-    top: 0;
+    bottom: -2rem;
 }
 
-/**/
+/* Why we? */
+.block__row {
+	position: relative;
+}
+.block__img, .block__col {
+	position: relative;
+	z-index: 2;
+}
+
+.block__title-2 {
+	font-size: 25px;
+	text-transform: uppercase;
+}
+
+.block__description {
+	max-width: 70%;
+	position: relative;
+    bottom: 9rem;
+    left: 3rem;
+}
+
+.block__description p {
+	color: #fff;
+	font-size: 15px;
+}
+
+.block__description__btn {
+	text-transform: uppercase;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn-border {
+    border: 1px solid #666;
+    border-radius: 50px;
+    padding: 3px 5px;
+    width: 100%;
+    max-width: 30%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-transform: uppercase;
+    border-radius: 1px;
+    padding: 0 20px;
+    height: 40px;
+    font-weight: 600;
+    line-height: 1;
+    text-align: left;
+    cursor: pointer;
+    color: #000;
+    background: #00d0e0;
+    transition: all 0.3s ease-in-out;
+    width: auto;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.btn__label {
+	border-radius: 50px;
+	width: auto;
+}
+
+.btn:hover {
+	width: 100%;
+	justify-content: center;
+}
+
+.flash_why_we {
+	background: url("../assets/flash.webp") center center / cover no-repeat;
+	position: absolute;
+    width: 60%;
+    height: 100%;
+    z-index: 1;
+    bottom: 22%;
+}
+
+/* Why Trade with NetherexPro? */
+.space {
+	padding-block: 0;
+}
+
+.container__trading {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+}
+
+.block__img__trading {
+	width: 50%;
+	display: flex;
+    align-items: flex-end;
+}
+
+.rocket {
+	border: 1px solid #666;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.container__trading__description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 71%;
+    justify-content: center;
+}
+
+.container__trading__description p {
+	color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    width: 90%;
+}
+
+.trading__block__title {
+	font-weight: 300;
+	text-decoration: underline;
+	text-underline-offset: 5px;
+}
+
+.trading_rocket {
+	display: flex;
+    align-items: flex-end;
+    width: 15%;
+}
+
+.container__trading__details {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	justify-content: flex-end;
+}
+
+.coin { width: 30%; }
+
+.numbers {
+	font-size: 50px;
+	font-weight: 900;
+	color: #fff;
+}
+
+.numbers span { font-size: 20px; }
+
+.number__info {
+	color: #fff;
+	margin-top: 0;
+	text-transform: uppercase;
+}
+
+.container__trading__details__info button { margin-top: 20px; }
+
+/* How does NetherexPro improve your trading experience? */
+.container__experience {
+    position: relative;
+    background: url("../assets/experince.webp") no-repeat center center;
+    background-size: cover;
+    background-color: #608385;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 500px;
+    width: 100%;
+    padding: 20px;
+    z-index: 1;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .container__experience {
+        background-image: url(../assets/experince.webp);
+    }
+}
+
+.container__experience::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000400ba;
+    z-index: -1;
+}
+
+.experience__title {
+	text-transform: uppercase;
+	font-size: 40px;
+}
+
+.experience__info {
+	text-align: center;
+	max-width: 500px;
+}
+
+.experience__button {
+	margin-top: 20px;
+}
+
+.benefit__col span {
+	color: #fff;
+	font-size: 14px;
+}
+
+.icon-wrapper {
+    display: flex;
+    justify-content: left;
+    position: relative;
+}
+.benefit-line {
+    position: absolute;
+    width: 110%;
+    height: 2px;
+    background-color: #666;
+    top: 50%;
+    right: 22%;
+    transform: translateX(50%);
+    z-index: -1;
+}
+
+.benefit__col:last-child .benefit-line {
+    width: 80%;
+    right: 37%;
+}
+
+/* Getting Started with NetherexPro */
+/*.steps__cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.step__card:nth-child(1) {
+    margin-right: -50px;
+    z-index: 4;
+}
+
+.step__card:nth-child(2) {
+    margin-top: 10px;
+    z-index: 10;
+}
+
+.step__card:nth-child(3) {
+    margin-left: -50px;
+    z-index: 4;
+}
+
+.step__img {
+	width: auto;
+}
+
+.step__description {
+	bottom: 8.5rem;
+}
+
+.step__description h1 {
+	color: #fff;
+	font-size: 20px;
+}
+
+.step__description p {
+	color: #fff;
+	font-size: 13px;
+}
+
+.shown { display: none; }
+
+.step__card:hover .shown {
+    display: block;
+    text-align: left;
+}
+
+.step__card img {
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.step__card:hover img {
+    transform: scale(1.05);
+}
+
+.flash_step2 {
+    background: url("../assets/flash.webp") center center / contain no-repeat;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    z-index: 3;
+    bottom: -12%;
+    pointer-events: none;
+}
+
+
+.header__number {
+	display: flex;
+    justify-content: flex-start;
+}
+
+.after_hovered {
+	text-align: left;
+}
+
+.header__number {
+    display: flex;
+    justify-content: flex-start;
+    transition: all 0.3s ease-in-out;
+}
+
+.activated {
+    justify-content: center;
+    transform: scale(1.2);
+}
+
+.after_hovered {
+    text-align: center;
+    color: #ddd;
+    transition: all 0.3s ease-in-out;
+}
+
+.step__card {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+}
+
+.step__description {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+}
+
+.step__card:hover .step__description {
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.step__number {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    border: 2px solid #666;
+    border-radius: 50px;
+    margin-right: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.step__card:hover .step__number {
+    transform: scale(1.2);
+    border-color: #fff;
+}*/
+
+.steps__cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.step__card {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+}
+
+.step__card:nth-child(1) {
+    margin-right: -50px;
+    z-index: 4;
+}
+
+.step__card:nth-child(2) {
+    margin-top: 10px;
+    z-index: 10;
+}
+
+.step__card:nth-child(3) {
+    margin-left: -50px;
+    z-index: 4;
+}
+
+.step__img {
+    width: auto;
+}
+
+.step__card img {
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.step__card:hover img {
+    transform: scale(1.05);
+}
+
+.flash_step2 {
+    background: url("../assets/flash.webp") center center / contain no-repeat;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    z-index: 3;
+    bottom: -12%;
+    pointer-events: none;
+}
+
+.step__number {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    border: 2px solid #666;
+    border-radius: 50px;
+    margin-right: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.step__card:hover .step__number {
+    transform: scale(1.2);
+    border-color: #fff;
+}
+
+.step__description {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+}
+
+.step__description h1 {
+    color: #fff;
+    font-size: 20px;
+}
+
+.step__description p {
+    color: #fff;
+    font-size: 13px;
+}
+
+.step__card:hover .step__description {
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.header__number {
+    display: flex;
+    justify-content: flex-start;
+    transition: all 0.3s ease-in-out;
+}
+
+.activated {
+    justify-content: center;
+    transform: scale(1.2);
+}
+
+.shown {
+    display: none;
+}
+
+.step__card:hover .shown {
+    display: block;
+}
+
+.after_hovered {
+    text-align: center;
+    color: #ddd;
+    transition: all 0.3s ease-in-out;
+}
+
 
 /* FOOTER */
 .flex-bl-copyright {
@@ -210,18 +694,14 @@ footer .nav-footer .language {
     border: none;
 }
 
-footer .nav-footer .language .subitem a {
-	padding: 6px 0px;
-}
+footer .nav-footer .language .subitem a { padding: 6px 0px; }
 
 footer .menu__link {
 	color: #000;
 	font-weight: 400;
 }
 
-footer .menu__link:hover {
-	color: #000;
-}
+footer .menu__link:hover { color: #000; }
 
 footer .nav-footer .language>a::after{
 	content:"";
@@ -233,17 +713,41 @@ footer .nav-footer .language>a::after{
 
 @media (width: 1024px) {
 	.header { padding: 15px 20px; }
-	.title-form { font-size: 17px; }
+	.form__bg-mobile { bottom: 1rem; }
 	.form-group-btn { padding-bottom: 0; }
 	.form__div { padding-bottom: 40px; }
 	.form__bg ul li:not(:last-child) { margin-bottom: 5px; }
 	.home__hold { gap: 40px; }
 	.home__content__logo { margin-bottom: 0px; }
 	.home__content { bottom: 4rem; }
+	.bg-video {
+		width: 1024px;
+    	height: 844px;
+	}
+
+/* Why Trade with NetherexPro? */
+	.container__trading { gap: 10px; }
+	.block__img__trading { width: 100%; }
+	.container__trading__description { width: auto; justify-content: flex-end; }
+	.trading_rocket { width: 30%; }
+	.coin { width: 50%; }
+	.block__title-2 { font-size: 30px; }
+	.number__info { font-size: 8px; }
+
+/* How does NetherexPro improve your trading experience? */
+	.benefit-line {
+		width: 104%;
+		right: 18%;
+	}
+
+	.benefit__col:last-child .benefit-line {
+	    width: 73%;
+        right: 34%;
+	}
 }
 
 @media (max-width: 768px) {
-	.desktop-nav, .desktop, .registration, .footer-nav { display: none; }
+	.desktop-nav, .desktop, .registration, .home__content__image, .footer-nav { display: none; }
     .mobile-menu { 
         display: flex;
         align-items: center;
@@ -289,8 +793,7 @@ footer .nav-footer .language>a::after{
         cursor: pointer; 
         height: 27px; 
         width: 27px; 
-        position: 
-        relative; 
+        position: relative; 
         z-index: 50; 
     }
     #burger-menu span, #burger-menu span:before, #burger-menu span:after {
@@ -334,9 +837,7 @@ footer .nav-footer .language>a::after{
         width: 0; 
     }
     .bg-video { width: 100%; height: 100% }
-    .home__hold {
-    	padding-bottom: 0px;
-    }
+    .home__hold { padding-bottom: 0px; }
     .contact-btn-mobile {
         display: flex;
         justify-content: center;
@@ -345,22 +846,106 @@ footer .nav-footer .language>a::after{
         background: transparent;
         color: #fff;
     }
-    .form__div {
+    .form__bg-mobile {
     	padding: 20px;
     	position: initial;
-    }
-    .form__bg-mobile {
     	display: block;
     	border: 1px solid #666;
     }
-    input {
-    	border: 1px solid #d5d9ed;
+    input { border: 1px solid #d5d9ed; }
+    .home__content { position: initial; }
+    .description__text { width: 100%; }
+    .header { padding: 15px 10px; }
+    .bg-video {
+    	width: 100%;
+    	height: 967px;
     }
+    .line { bottom: 0; }
+
+/* WHY WE? */
+	.space { padding-block: 100px!important; }
+    .block__row { flex-direction: column-reverse; }
+    .spacing { padding-block: 10px 0!important; }
+    .btn-border { 
+    	margin-top: 0px; 
+    	margin: 0;
+    	margin-bottom: 20px;
+    }
+    .block__img {
+	    width: 100%;
+	    max-width: 500px;
+	    margin: 0 auto;
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	}
+	.block__description { left: 0; }
+	.flash_why_we { 
+		top: 20%;
+        left: 40%;
+	}
+
+/* Why Trade with NetherexPro? */
+	.container__trading { gap: 10px; }
+	.block__img__trading { align-items: normal; width: 70%; }
+	.trading_rocket { width: auto; }
+	.container__trading__description { width: 70%; }
+	.coin { width: 50%; }
+	.rocket { padding: 10px; }
+
+/* How does NetherexPro improve your trading experience? */
+	.experience__title { font-size: 30px; }
+	.experience__info { max-width: 100%; }
+	.experience__button { margin: 0 auto; margin-top: 20px; }
+	.benefit__col__mobile {
+		flex-direction: column;
+		align-items: center;
+	}
+	.benefit-line { display: none; }
+	.benefit__col span { text-align: center; }
+}
+
+@media (max-width: 425px) {
+	.bg-video { height: 991px; }
+	.block__description { bottom: 7.5rem; }
+	.block__description p { font-size: 13px; }
+	.block__description__btn { font-size: 13px; }
+	.btn-border { max-width: 50%; }
+	.flash_why_we { 
+		top: 20%;
+        left: 0;
+        width: 100%;
+	}
+	.space { padding-block: 50px!important; }
+
+/* Why Trade with NetherexPro? */
+	.container__trading {
+	    flex-direction: column;
+	    align-items: center;
+	    text-align: center;
+	}
+	.container__trading__description { width: 100%; }
+	.container__trading__description p { width: 100%; text-align: left; }
+	.trading_rocket { display: none; }
+	.container__trading__details { width: 100%; align-items: center; }
+	.container__trading__details__info button { margin: 0 auto; margin-top: 20px; }
+}
+
+@media (max-width: 375px) {
+	.bg-video { height: 1020px; }
+	.btn-border { max-width: 60%; }
+	.block__description { bottom: 6.8rem;  }
+	.block__description p { font-size: 12px; }
+	.block__description__btn { font-size: 12px; }
+	.flash_why_we { width: 100%!important; }
+	.block__title-2 { font-size: 19px; text-align: left; }
 }
 
 @media (max-width: 320px) {
-	.bg-video { width: 100%; height: 100% }
-	.header {
-		padding: 8px 5px;
-	}
+	.bg-video { height: 1045px; }
+	.header { padding: 8px 5px; }
+	.block__description { bottom: 5.5rem;  }
+	.block__description p { font-size: 10px; }
+	.block__description__btn { font-size: 10px; }
+	.flash_why_we { width: 100%!important; }
 }

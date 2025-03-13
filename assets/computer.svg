@@ -1,0 +1,16 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 84" width="96" height="84">
+	<title>Компьютер</title>
+	<style>
+		.s0 { fill: none;stroke: #00d0e0;stroke-miterlimit:10;stroke-width: 6 } 
+		.s1 { fill: #00d0e0 } 
+	</style>
+	<g>
+		<g id="_Слой_1">
+			<g>
+				<path fill-rule="evenodd" class="s0" d="m17 14h59c4.4 0 8 3.6 8 8v30.7c0 4.4-3.6 8-8 8h-59c-4.4 0-8-3.6-8-8v-30.7c0-4.4 3.6-8 8-8z"/>
+				<path fill-rule="evenodd" class="s0" d="m45.1 60.8h4.4v11.6h-4.4z"/>
+				<path class="s1" d="m65.6 77v-1.4c0-3.2-2.6-5.8-5.8-5.8h-25.5c-3.2 0-5.8 2.6-5.8 5.8v1.4z"/>
+			</g>
+		</g>
+	</g>
+</svg>
