@@ -419,6 +419,7 @@
 /* Getting Started with NetherexPro */
 .title_started {
 	margin-bottom: 10px;
+	text-transform: uppercase;
 }
 
 .title_info {
@@ -591,7 +592,117 @@
     z-index: 2;
 }
 
-/*  */
+/* Investing in Bitcoin? */
+.investing_section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    padding-block: 20px 0!important;
+}
+
+.container__investing {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1320px;
+    padding-inline: 10px;
+}
+
+.investing_title { text-transform: uppercase; }
+
+.btn-border__investing {
+	margin-top: 0px;
+	max-width: 20%;
+}
+
+.bg-graph {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    margin-top: 100px;
+}
+
+.slide.active { opacity: 1; }
+
+.text-content {
+	max-width: 40%;
+    text-align: left;
+}
+
+.text-content h2, .text-content p {
+	color: #fff;
+}
+
+.text-content h2 {
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.text-content p { margin-top: 20px; }
+
+.pagination {
+	position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+}
+
+.dot {
+	width: 30px;
+    height: 5px;
+    background: #666;
+    cursor: pointer;
+    transition: width 0.3s, background-color 0.3s;
+}
+   
+.dot.active:first-child { width: 70px; }
+
+.dot.active:nth-child(2) { width: 50px; }
+
+.dot.active:nth-child(3) { width: 40px; }
+
+.dot.active { background: #00d0e0; }
+
+/* FAQ */
+
 
 /* FOOTER */
 .flex-bl-copyright {
@@ -677,6 +788,12 @@ footer .nav-footer .language>a::after{
 	}
 	.step__description {
 		max-width: 75%;
+	}
+
+/* Investing in Bitcoin? */
+	.btn-border__investing {
+		margin-top: 0px;
+		max-width: 30%;
 	}
 
 }
@@ -851,6 +968,18 @@ footer .nav-footer .language>a::after{
 		left: 50%;
 	}
 
+/* Investing in Bitcoin? */
+	.btn-border__investing {
+		margin-top: 0px;
+		max-width: 40%;
+	}
+
+	.slider { height: 80%; }
+	.slide { 
+		justify-content: center;
+		margin-top: 10px;
+	 }
+	.text-content { max-width: 100%; }
 }
 
 @media (max-width: 425px) {
@@ -889,6 +1018,9 @@ footer .nav-footer .language>a::after{
 		background-size: cover;
 		height: 80px; 
 	}
+
+/* Investing in Bitcoin? */
+	.btn-border__investing { max-width: 70%; }
 }
 
 @media (max-width: 375px) {
@@ -906,6 +1038,7 @@ footer .nav-footer .language>a::after{
 	.step__description { bottom: 1.5rem; }
 	.step__description h1 { font-size: 18px; }
 	.step_line { height: 60px; }
+	.btn-border__investing { max-width: 80%; }
 }
 
 @media (max-width: 320px) {

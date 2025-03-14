@@ -304,6 +304,41 @@
             </div>
         </section>
 
+        <section class="block p0 investing_section">
+            <video autoplay muted loop playsinline class="bg-graph">
+                <source src="assets/graph.mp4" type="video/mp4">
+            </video>
+            <div class="container__investing">
+                <div class="btn-border btn-border__investing">
+                    <button class="btn btn__label">Why It Makes Sense</button>
+                </div>
+                <h2 class="title-2 center investing_title">Investing in Bitcoin?</h2>
+                <div class="slider-container">
+                    <div class="slider">
+                        <div class="slide active">
+                            <div class="text-content">
+                                <h2>Bitcoin holds the potential for substantial long-term value growth</h2>
+                                <p>Unveiled in 2009 as open-source software, Bitcoin marked the inception of cryptocurrency. Largely misunderstood at it's start, it launched at a price of just $0.00099 per Bitcoin. Projecting forward to 2025, with Bitcoin anticipated to potentially surpass \$100,000 per coin, the value proposition of acquiring it at it's inception becomes even more compelling, those who recognized it's potential early on secured an unprecedented opportunity.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="text-content">
+                                <h2>Bitcoin: the future of decentralized finance</h2>
+                                <p>As global adoption rises, Bitcoin continues to shape the future of financial independence by offering a trustless and borderless means of transferring value. Its decentralized nature eliminates the need for intermediaries, reducing transaction costs and increasing accessibility for individuals worldwide. With the rise of institutional investment and technological advancements, Bitcoin is paving the way for a more open and transparent financial system.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="text-content">
+                                <h2>Securing your wealth with bitcoin</h2>
+                                <p>Unlike traditional assets, Bitcoin provides a hedge against inflation and centralized risks by offering self-sovereign financial security. With its cryptographic security and decentralized network, Bitcoin is resistant to censorship and government interference. This makes it a valuable tool for wealth preservation, especially in regions experiencing economic instability and capital controls.</p>
+                            </div>
+                        </div>
+                        <div class="pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- <section class="faq">
         <div class="container">
         <div class="faq__row">
@@ -639,149 +674,105 @@
             }
         });
     });
-    // document.addEventListener("DOMContentLoaded", function () {
-    //     document.querySelectorAll(".step__card").forEach((card) => {
-    //         const img = card.querySelector("img");
-
-    //         if (img) {
-    //             const originalSrc = img.src;
-    //             const newSrc = "assets/steps.svg";
-
-    //             card.addEventListener("mouseenter", function () {
-    //                 img.style.transition = "opacity 0.4s ease-in-out, transform 0.3s ease-in-out";
-    //                 img.style.opacity = "0";
-    //                 setTimeout(() => {
-    //                     img.src = newSrc;
-    //                     img.style.opacity = "1";
-    //                     img.style.transform = "scale(1.05)";
-    //                 }, 200);
-    //             });
-
-    //             card.addEventListener("mouseleave", function () {
-    //                 img.style.transition = "opacity 0.4s ease-in-out, transform 0.3s ease-in-out";
-    //                 img.style.opacity = "0";
-    //                 setTimeout(() => {
-    //                     img.src = originalSrc;
-    //                     img.style.opacity = "1";
-    //                     img.style.transform = "scale(1)";
-    //                 }, 200);
-    //             });
-    //         }
-    //     });
-    // });
-
-    // document.addEventListener("DOMContentLoaded", function () {
-    //     document.querySelectorAll(".step__card").forEach((card) => {
-    //         const img = card.querySelector("img");
-    //         const headerNumber = card.querySelector(".header__number");
-    //         const textElements = card.querySelectorAll("h1, p");
-    //         const stepNumber = card.querySelector(".step__number");
-
-    //         if (img) {
-    //             const originalSrc = img.src;
-    //             const newSrc = "assets/steps.svg";
-
-    //             card.addEventListener("mouseenter", function () {
-    //                 img.style.transition = "opacity 0.4s ease-in-out, transform 0.3s ease-in-out";
-    //                 img.style.opacity = "0";
-    //                 setTimeout(() => {
-    //                     img.src = newSrc;
-    //                     img.style.opacity = "1";
-    //                     img.style.transform = "scale(1.05)";
-    //                 }, 200);
-
-    //                 headerNumber.classList.add("activated");
-
-    //                 stepNumber.classList.add("shown");
-
-    //                 textElements.forEach((element) => {
-    //                     element.classList.add("after_hovered");
-    //                 });
-    //             });
-
-    //             card.addEventListener("mouseleave", function () {
-    //                 img.style.transition = "opacity 0.4s ease-in-out, transform 0.3s ease-in-out";
-    //                 img.style.opacity = "0";
-    //                 setTimeout(() => {
-    //                     img.src = originalSrc;
-    //                     img.style.opacity = "1";
-    //                     img.style.transform = "scale(1)";
-    //                 }, 200);
-
-    //                 headerNumber.classList.remove("activated");
-
-    //                 stepNumber.classList.remove("shown");
-
-    //                 textElements.forEach((element) => {
-    //                     element.classList.remove("after_hovered");
-    //                 });
-    //             });
-    //         }
-    //     });
-    // });
 
     document.addEventListener("DOMContentLoaded", function () {
-    document.querySelectorAll(".step__card").forEach((card) => {
-        const img = card.querySelector("img");
-        const headerNumber = card.querySelector(".header__number");
-        const textElements = card.querySelectorAll("h1, p");
-        const stepNumber = card.querySelector(".step__number");
-        const h1 = card.querySelector("h1");
-        const button = card.querySelector(".block__description__btn.different.shown");
+        document.querySelectorAll(".step__card").forEach((card) => {
+            const img = card.querySelector("img");
+            const headerNumber = card.querySelector(".header__number");
+            const textElements = card.querySelectorAll("h1, p");
+            const stepNumber = card.querySelector(".step__number");
+            const h1 = card.querySelector("h1");
+            const button = card.querySelector(".block__description__btn.different.shown");
 
-        if (img) {
-            const originalSrc = img.src;
-            const newSrc = "assets/steps.svg";
+            if (img) {
+                const originalSrc = img.src;
+                const newSrc = "assets/steps.svg";
 
-            card.addEventListener("mouseenter", function () {
-                img.style.transition = "opacity 0.4s ease-in-out, transform 0.3s ease-in-out";
-                img.style.opacity = "0";
-                setTimeout(() => {
-                    img.src = newSrc;
-                    img.style.opacity = "1";
-                    img.style.transform = "scale(1.05)";
-                }, 200);
+                card.addEventListener("mouseenter", function () {
+                    img.style.transition = "opacity 0.4s ease-in-out, transform 0.3s ease-in-out";
+                    img.style.opacity = "0";
+                    setTimeout(() => {
+                        img.src = newSrc;
+                        img.style.opacity = "1";
+                        img.style.transform = "scale(1.05)";
+                    }, 200);
 
-                headerNumber?.classList.add("activated");
-                stepNumber?.classList.add("shown");
-                h1.style.marginBottom = "10px"; // Add margin-bottom on hover
+                    headerNumber?.classList.add("activated");
+                    stepNumber?.classList.add("shown");
+                    h1.style.marginBottom = "10px";
 
-                textElements.forEach((element) => {
-                    element.classList.add("after_hovered");
+                    textElements.forEach((element) => {
+                        element.classList.add("after_hovered");
+                    });
+
+                    if (button) {
+                        button.classList.add("move-right");
+                    }
                 });
 
-                if (button) {
-                    button.classList.add("move-right"); // Add a class to move button on hover
-                }
-            });
+                card.addEventListener("mouseleave", function () {
+                    img.style.transition = "opacity 0.4s ease-in-out, transform 0.3s ease-in-out";
+                    img.style.opacity = "0";
+                    setTimeout(() => {
+                        img.src = originalSrc;
+                        img.style.opacity = "1";
+                        img.style.transform = "scale(1)";
+                    }, 200);
 
-            card.addEventListener("mouseleave", function () {
-                img.style.transition = "opacity 0.4s ease-in-out, transform 0.3s ease-in-out";
-                img.style.opacity = "0";
-                setTimeout(() => {
-                    img.src = originalSrc;
-                    img.style.opacity = "1";
-                    img.style.transform = "scale(1)";
-                }, 200);
+                    headerNumber?.classList.remove("activated");
+                    stepNumber?.classList.remove("shown");
+                    h1.style.marginBottom = "";
 
-                headerNumber?.classList.remove("activated");
-                stepNumber?.classList.remove("shown");
-                h1.style.marginBottom = ""; // Reset margin-bottom
+                    textElements.forEach((element) => {
+                        element.classList.remove("after_hovered");
+                    });
 
-                textElements.forEach((element) => {
-                    element.classList.remove("after_hovered");
+                    if (button) {
+                        button.classList.remove("move-right");
+                    }
                 });
-
-                if (button) {
-                    button.classList.remove("move-right"); // Remove class on hover out
-                }
-            });
-        }
+            }
+        });
     });
-});
+</script>
 
+<script>
+    const slides = document.querySelectorAll('.slide');
+    const pagination = document.querySelector('.pagination');
+    let currentIndex = 0;
+    let slideInterval;
 
+    function createPagination() {
+        slides.forEach((_, index) => {
+            const dot = document.createElement('div');
+            dot.classList.add('dot');
+            if (index === 0) dot.classList.add('active');
+            dot.addEventListener('click', () => moveToSlide(index));
+            pagination.appendChild(dot);
+        });
+    }
 
+    function moveToSlide(index) {
+        slides[currentIndex].classList.remove('active');
+        pagination.children[currentIndex].classList.remove('active');
+        currentIndex = index;
+        slides[currentIndex].classList.add('active');
+        pagination.children[currentIndex].classList.add('active');
+        resetTimer();
+    }
+
+    function nextSlide() {
+        let nextIndex = (currentIndex + 1) % slides.length;
+        moveToSlide(nextIndex);
+    }
+
+    function resetTimer() {
+        clearInterval(slideInterval);
+        slideInterval = setInterval(nextSlide, 3000);
+    }
+
+    createPagination();
+    slideInterval = setInterval(nextSlide, 3000);
 </script>
 
 <script src="js/main.js"></script>
