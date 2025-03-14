@@ -676,7 +676,7 @@ textarea{
 	max-width:320px
 }
 .faq{
-	background:#f7f8f8
+	background: #000;
 }
 .faq__row{
 	display:-webkit-box;
