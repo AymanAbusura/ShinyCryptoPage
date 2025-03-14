@@ -857,7 +857,7 @@ footer .nav-footer .language {
 footer .nav-footer .language .subitem a { padding: 6px 0px; }
 
 footer .menu__link {
-	color: #000;
+	color: #000!important;
 	font-weight: 400;
 }
 
@@ -878,6 +878,61 @@ footer .nav-footer .language>a::after{
 .nav1 .nav__link:hover {
 	text-decoration: none!important;
 	color: #00d0e0;
+}
+
+/* LOGIN PAGE */
+.login_color { color: #fff!important; }
+
+.login_form__bg {
+	position: unset!important;
+	display: flex;
+    justify-content: center;
+}
+
+.login_form__div {
+	border: 1px solid #666;
+	border-radius: 5px;
+	padding: 20px;
+	max-width: 500px;
+}
+
+.login_form__div input {
+	border: 1px solid #666;
+}
+
+/* CONTACT PAGE */
+.home__hold__contact {
+	flex-direction: column!important;
+	gap: 0!important;
+	align-items: center!important;
+}
+
+.contact__description { color: #fff!important; }
+
+.contact_form__bg {
+	margin-top: 0!important;
+	position: absolute !important;
+	width: 90%;
+	bottom: 15%;
+}
+
+.contact_form__bg textarea {
+	background: #000;
+	border: none;
+	height: 150px;
+	color: #fff;
+}
+
+.btn-contact {
+	margin-top: 100px;
+}
+
+.contact_line { bottom: 6.7rem; }
+
+.contact_footer-top { padding-block: 0px!important; }
+
+.contact_margin {
+	margin-bottom: 20px;
 }
 
 @media (width: 1024px) {
@@ -935,7 +990,7 @@ footer .nav-footer .language>a::after{
 }
 
 @media (max-width: 768px) {
-	.desktop-nav, .desktop, .registration, .home__content__image, .footer-nav { display: none; }
+	.desktop-nav, .desktop, .registration, .home__content__image, .footer-nav { display: none!important; }
     .mobile-menu { 
         display: flex;
         align-items: center;
