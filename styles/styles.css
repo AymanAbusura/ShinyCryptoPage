@@ -5,6 +5,17 @@
     font-weight: bold;
 }
 
+.lato-light {
+	font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+.lato-italic {
+	font-family: 'Lato', sans-serif;
+	font-style: italic;
+	font-weight: 300;
+}
+
 .different { color: #00d0e0; }
 
 .no-scroll {
@@ -18,28 +29,7 @@
     height: auto;
     z-index: -1;
     object-fit: cover;
-   /* top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 100%;
-    min-height: 100%;
-    width: 1920px;
-    height: 1080px;*/
 }
-
-/*@media (-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi){
-	.bg-video {
-		width: 100%;
-		height: auto;
-	}
-}
-
-@media (-webkit-max-device-pixel-ratio:2),(max-resolution:192dpi){
-	.bg-video {
-		width: auto;
-		height: 100%;
-	}
-}*/
 
 .header {
     display: flex;
@@ -146,10 +136,6 @@
     align-items: center;
 }
 
-/*.home__image {
-	width: 100%;
-}*/
-
 .registration {
     background: url("../assets/registration.svg") no-repeat center center;
     background-size: contain;
@@ -184,6 +170,9 @@
     justify-content: center!important;
 }
 
+.form__info li {
+	color: #fff!important;
+}
 
 .line {
     background:url("../assets/line.webp");
@@ -828,6 +817,8 @@
     z-index: 2;
 }
 
+.faq_flash_line_mobile { display: none; }
+
 .faq_line {
     background:url("../assets/line.webp");
 	background-size:cover;
@@ -878,6 +869,15 @@ footer .nav-footer .language>a::after{
 	height:12px;
 	min-width:0;
 	background:url("../assets/direction-down-black.svg")
+}
+
+.nav1 .nav__link {
+	text-transform: uppercase;
+}
+
+.nav1 .nav__link:hover {
+	text-decoration: none!important;
+	color: #00d0e0;
 }
 
 @media (width: 1024px) {
@@ -1116,6 +1116,43 @@ footer .nav-footer .language>a::after{
 		margin-top: 10px;
 	 }
 	.text-content { max-width: 100%; }
+
+/* FAQ */
+	.faq-container { 
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+	}
+	.faq-image { 
+		width: 100%;
+    	max-width: 500px;
+	}
+	.faq_contact_btn {
+		position: absolute;
+		bottom: 25%;
+		left: 55%;
+	}
+	.faq_contact_description p { 
+		text-align: center;
+		max-width: 100%;
+	}
+	.faq_flash_line { display: none; }
+	.faq_flash_line_mobile {
+		display: block;
+		background: url("../assets/faq_line_mobile.webp");
+	    background-size: contain;
+	    background-position: top center;
+	    background-repeat: no-repeat;
+	    width: 100%;
+	    height: 100px;
+	    position: relative;
+	    z-index: 2;
+	}
+	.faq-content {
+		width: 100%;
+    	max-width: 100%;
+	}
+	.faq-title span { display: inline-block; }
 }
 
 @media (max-width: 425px) {
@@ -1157,6 +1194,15 @@ footer .nav-footer .language>a::after{
 
 /* Investing in Bitcoin? */
 	.btn-border__investing { max-width: 70%; }
+
+/* FAQ */
+	.faq-container { padding: 0; }
+	.faq_contact_btn { 
+	    bottom: 38%;
+        left: 30%;
+    }
+    .faq_contact_description h2 { text-align: center; }
+    .faq_flash_line_mobile { height: 50px; }
 }
 
 @media (max-width: 375px) {
@@ -1175,6 +1221,7 @@ footer .nav-footer .language>a::after{
 	.step__description h1 { font-size: 18px; }
 	.step_line { height: 60px; }
 	.btn-border__investing { max-width: 80%; }
+
 }
 
 @media (max-width: 320px) {
@@ -1188,4 +1235,9 @@ footer .nav-footer .language>a::after{
 	.step__description { bottom: 1.5rem; }
 	.step__description h1 { font-size: 15px; }
 	.step_line { height: 50px; }
+	.faq_contact_btn { 
+		bottom: 45%;
+        left: 25%;
+    }
+    .nav1 { flex-direction: column; }
 }

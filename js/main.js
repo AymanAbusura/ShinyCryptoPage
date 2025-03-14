@@ -30,6 +30,22 @@ window.onload = function() {;
 	setupToggle('mobile-toggle');
 	setupToggle('toggle-1');
 
+	// FAQ
+	function toggleReadMore(button) {
+		var moreText = button.previousElementSibling.querySelector(".more-text");
+
+        if (moreText.style.display === "none" || moreText.style.display === "") {
+            moreText.style.display = "inline";
+            button.innerText = "Read less";
+        } else {
+        	moreText.style.display = "none";
+        	button.innerText = "Read more";
+        }
+    }
+
+    window.toggleReadMore = toggleReadMore;
+
+
 
 	// замена домена
 	var domainName = "netherexpro.com";

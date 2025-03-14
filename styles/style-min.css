@@ -52,18 +52,13 @@ img{
 }
 .form__bg{
 	border-radius:10px;
-/*	background: #000;*/
-/*	border: 1px solid #666;*/
-	/*background:-webkit-gradient(linear,left bottom,left top,from(#f7f8f8),to(#f7f8f8)),#fff;
-	background:linear-gradient(0deg,#f7f8f8 0,#f7f8f8 100%),#fff;
-	-webkit-backdrop-filter:blur(5px);
-	backdrop-filter:blur(5px)*/
 }
-@supports (font-size-adjust:1){
+@supports (font-size-adjust:1) {
 	*{
 		font-size-adjust:.5
+	}
 }
-}
+
 *{
 	font-family: 'Lato', sans-serif;
 /*	font-family:"Inter",sans-serif*/
@@ -72,7 +67,8 @@ body,html{
 	position:relative;
 	height:100%;
 	min-height:100%;
-	max-width:100%
+	max-width:100%;
+	overflow-x: hidden;
 }
 body{
 	font-weight:400;
@@ -1477,8 +1473,8 @@ input[type="text"]:focus,input[type="email"]:focus,input[type="tel"]:focus {
 	position: absolute;
 }
 .form__wrapper-loader.loader,.api-error.loader {
-/*	display: block;*/
-	display: none;
+	display: block;
+/*	display: none;*/
 }
 .iti--separate-dial-code.iti--show-flags .iti__selected-dial-code {
 	margin-left: 6px;

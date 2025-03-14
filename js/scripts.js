@@ -115,21 +115,4 @@ document.addEventListener("DOMContentLoaded", function () {
         createPagination();
         slideInterval = setInterval(nextSlide, 3000);
     }
-
-    // FAQ
-    window.onload = function () {
-        function toggleReadMore(button) {
-            var moreText = button.previousElementSibling.querySelector(".more-text");
-
-            if (moreText.style.display === "none" || moreText.style.display === "") {
-                moreText.style.display = "inline";
-                button.innerText = "Read less";
-            } else {
-                moreText.style.display = "none";
-                button.innerText = "Read more";
-            }
-        }
-
-        window.toggleReadMore = toggleReadMore;
-    };
 });
