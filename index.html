@@ -260,18 +260,16 @@
             </div>
         </section>
 
-<!--  -->
-
         <section class="block">
             <div class="container">
-                <h2 class="title-2 center">Getting Started with NetherexPro</h2>
-                <h3 class="title-2 center">How to Begin</h3>
+                <h2 class="title-2 center title_started">Getting Started with NetherexPro</h2>
+                <h3 class="center title_info">How to Begin</h3>
                 <div class="steps__cards">
                     <div class="step__card">
                         <div class="block__img step__img block__img-1">
                             <img src="assets/step_1.webp" alt="" loading="lazy">
                             <div class="block__description step__description">
-                                <h2 class="shown"><span class="step__number">1</span></h2>
+                                <h2 class="shown"><span class="step__number">01</span></h2>
                                 <h1>Register an Account</h1>
                                 <p>First, you must register an account with NetherexPro. Head over to the login page and look below to what says, “Register a New Account.” Click the link to enter the next page where it will tell you to fill out your basic details, such as name, phone number, and email address.</p>
                                 <div class="block__description__btn different shown">Read more</div>
@@ -283,7 +281,7 @@
                             <div class="flash_step2"></div>
                             <img src="assets/step_2.webp" alt="" loading="lazy">
                             <div class="block__description step__description">
-                                <h2 class="shown"><span class="step__number">2</span></h2>
+                                <h2 class="shown"><span class="step__number">02</span></h2>
                                 <h1>Check for a Confirmation Email</h1>
                                 <p>A confirmation email is headed your way, granting access to NetherexPro. Shortly after, you'll receive a direct line to your expert account manager - your partner in navigating the crypto landscape.</p>
                                 <div class="block__description__btn different shown">Read more</div>
@@ -294,7 +292,7 @@
                         <div class="block__img step__img block__img-1">
                             <img src="assets/step_3.webp" alt="" loading="lazy">
                             <div class="block__description step__description">
-                                <h2 class="shown"><span class="step__number">3</span></h2>
+                                <h2 class="shown"><span class="step__number">03</span></h2>
                                 <h1>Make a Deposit</h1>
                                 <p>Empower your trading journey with an initial deposit of just $250, providing the capital needed to launch your NetherexPro experience.</p>
                                 <div class="block__description__btn different shown">Read more</div>
@@ -302,6 +300,7 @@
                         </div>
                     </div>
                 </div>
+                <div class="step_line"></div>
             </div>
         </section>
 
@@ -671,12 +670,64 @@
     //     });
     // });
 
+    // document.addEventListener("DOMContentLoaded", function () {
+    //     document.querySelectorAll(".step__card").forEach((card) => {
+    //         const img = card.querySelector("img");
+    //         const headerNumber = card.querySelector(".header__number");
+    //         const textElements = card.querySelectorAll("h1, p");
+    //         const stepNumber = card.querySelector(".step__number");
+
+    //         if (img) {
+    //             const originalSrc = img.src;
+    //             const newSrc = "assets/steps.svg";
+
+    //             card.addEventListener("mouseenter", function () {
+    //                 img.style.transition = "opacity 0.4s ease-in-out, transform 0.3s ease-in-out";
+    //                 img.style.opacity = "0";
+    //                 setTimeout(() => {
+    //                     img.src = newSrc;
+    //                     img.style.opacity = "1";
+    //                     img.style.transform = "scale(1.05)";
+    //                 }, 200);
+
+    //                 headerNumber.classList.add("activated");
+
+    //                 stepNumber.classList.add("shown");
+
+    //                 textElements.forEach((element) => {
+    //                     element.classList.add("after_hovered");
+    //                 });
+    //             });
+
+    //             card.addEventListener("mouseleave", function () {
+    //                 img.style.transition = "opacity 0.4s ease-in-out, transform 0.3s ease-in-out";
+    //                 img.style.opacity = "0";
+    //                 setTimeout(() => {
+    //                     img.src = originalSrc;
+    //                     img.style.opacity = "1";
+    //                     img.style.transform = "scale(1)";
+    //                 }, 200);
+
+    //                 headerNumber.classList.remove("activated");
+
+    //                 stepNumber.classList.remove("shown");
+
+    //                 textElements.forEach((element) => {
+    //                     element.classList.remove("after_hovered");
+    //                 });
+    //             });
+    //         }
+    //     });
+    // });
+
     document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll(".step__card").forEach((card) => {
         const img = card.querySelector("img");
         const headerNumber = card.querySelector(".header__number");
-        const textElements = card.querySelectorAll("h1, p"); // Select h1 and p
-        const stepNumber = card.querySelector(".step__number"); // The number inside h1
+        const textElements = card.querySelectorAll("h1, p");
+        const stepNumber = card.querySelector(".step__number");
+        const h1 = card.querySelector("h1");
+        const button = card.querySelector(".block__description__btn.different.shown");
 
         if (img) {
             const originalSrc = img.src;
@@ -691,16 +742,17 @@
                     img.style.transform = "scale(1.05)";
                 }, 200);
 
-                // Activate header number styling
-                headerNumber.classList.add("activated");
+                headerNumber?.classList.add("activated");
+                stepNumber?.classList.add("shown");
+                h1.style.marginBottom = "10px"; // Add margin-bottom on hover
 
-                // Show step number inside h1
-                stepNumber.classList.add("shown");
-
-                // Add .after_hovered class to h1 and p
                 textElements.forEach((element) => {
                     element.classList.add("after_hovered");
                 });
+
+                if (button) {
+                    button.classList.add("move-right"); // Add a class to move button on hover
+                }
             });
 
             card.addEventListener("mouseleave", function () {
@@ -712,20 +764,22 @@
                     img.style.transform = "scale(1)";
                 }, 200);
 
-                // Remove the activated class
-                headerNumber.classList.remove("activated");
+                headerNumber?.classList.remove("activated");
+                stepNumber?.classList.remove("shown");
+                h1.style.marginBottom = ""; // Reset margin-bottom
 
-                // Hide step number inside h1
-                stepNumber.classList.remove("shown");
-
-                // Remove .after_hovered class from h1 and p
                 textElements.forEach((element) => {
                     element.classList.remove("after_hovered");
                 });
+
+                if (button) {
+                    button.classList.remove("move-right"); // Remove class on hover out
+                }
             });
         }
     });
 });
+
 
 
 </script>

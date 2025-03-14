@@ -417,138 +417,14 @@
 }
 
 /* Getting Started with NetherexPro */
-/*.steps__cards {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 100px;
+.title_started {
+	margin-bottom: 10px;
 }
 
-.step__card:nth-child(1) {
-    margin-right: -50px;
-    z-index: 4;
-}
-
-.step__card:nth-child(2) {
-    margin-top: 10px;
-    z-index: 10;
-}
-
-.step__card:nth-child(3) {
-    margin-left: -50px;
-    z-index: 4;
-}
-
-.step__img {
-	width: auto;
-}
-
-.step__description {
-	bottom: 8.5rem;
-}
-
-.step__description h1 {
+.title_info {
 	color: #fff;
 	font-size: 20px;
 }
-
-.step__description p {
-	color: #fff;
-	font-size: 13px;
-}
-
-.shown { display: none; }
-
-.step__card:hover .shown {
-    display: block;
-    text-align: left;
-}
-
-.step__card img {
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-}
-
-.step__card:hover img {
-    transform: scale(1.05);
-}
-
-.flash_step2 {
-    background: url("../assets/flash.webp") center center / contain no-repeat;
-    position: absolute;
-    width: 500px;
-    height: 500px;
-    z-index: 3;
-    bottom: -12%;
-    pointer-events: none;
-}
-
-
-.header__number {
-	display: flex;
-    justify-content: flex-start;
-}
-
-.after_hovered {
-	text-align: left;
-}
-
-.header__number {
-    display: flex;
-    justify-content: flex-start;
-    transition: all 0.3s ease-in-out;
-}
-
-.activated {
-    justify-content: center;
-    transform: scale(1.2);
-}
-
-.after_hovered {
-    text-align: center;
-    color: #ddd;
-    transition: all 0.3s ease-in-out;
-}
-
-.step__card {
-    position: relative;
-    overflow: hidden;
-    transition: all 0.4s ease-in-out;
-}
-
-.step__description {
-    position: absolute;
-    bottom: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80%;
-    text-align: center;
-    transition: all 0.4s ease-in-out;
-}
-
-.step__card:hover .step__description {
-    bottom: 50%;
-    transform: translate(-50%, 50%);
-}
-
-.step__number {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    font-size: 16px;
-    font-weight: bold;
-    color: #fff;
-    border: 2px solid #666;
-    border-radius: 50px;
-    margin-right: 10px;
-    transition: all 0.3s ease-in-out;
-}
-
-.step__card:hover .step__number {
-    transform: scale(1.2);
-    border-color: #fff;
-}*/
 
 .steps__cards {
     display: flex;
@@ -590,7 +466,7 @@
     transform: scale(1.05);
 }
 
-.flash_step2 {
+/*.flash_step2 {
     background: url("../assets/flash.webp") center center / contain no-repeat;
     position: absolute;
     width: 500px;
@@ -598,46 +474,74 @@
     z-index: 3;
     bottom: -12%;
     pointer-events: none;
+}*/
+
+.flash_step2 {
+    background: url("../assets/flash.webp") center center / contain no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 500px;
+     z-index: 3; 
+    bottom: -12%;
+    pointer-events: none;
 }
 
 .step__number {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
     width: 40px;
     height: 40px;
-    line-height: 40px;
-    text-align: center;
     font-size: 16px;
     font-weight: bold;
-    color: #fff;
+    color: #00d0e0;
     border: 2px solid #666;
-    border-radius: 50px;
+    border-radius: 50%;
     margin-right: 10px;
     transition: all 0.3s ease-in-out;
+    margin-bottom: 10px;
+    line-height: normal;
+    text-align: center;
 }
+
 
 .step__card:hover .step__number {
     transform: scale(1.2);
     border-color: #fff;
 }
 
+.step__description p {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 3em;
+    transition: max-height 0.3s ease-out;
+    position: relative;
+    max-width: 100%;
+}
+
+.step__card:hover .step__description p {
+    -webkit-line-clamp: unset;
+    overflow: visible;
+    max-height: 100vh;
+}
+
 .step__description {
     position: absolute;
-    bottom: 10%;
+    bottom: 12%;
     left: 50%;
     transform: translateX(-50%);
     width: 80%;
-    text-align: center;
+    text-align: left;
     transition: all 0.4s ease-in-out;
 }
 
 .step__description h1 {
     color: #fff;
     font-size: 20px;
-}
-
-.step__description p {
-    color: #fff;
-    font-size: 13px;
 }
 
 .step__card:hover .step__description {
@@ -665,11 +569,29 @@
 }
 
 .after_hovered {
-    text-align: center;
+    text-align: left;
     color: #ddd;
     transition: all 0.3s ease-in-out;
 }
 
+.move-right {
+    display: flex!important;
+    justify-content: flex-end!important;
+    margin-top: 10px;
+}
+
+.step_line {
+	background: url("../assets/step_line.svg");
+	background-size: contain;
+	background-position: top center;
+	background-repeat: no-repeat;
+	width: 100%;
+    height: 140px;
+    position: relative;
+    z-index: 2;
+}
+
+/*  */
 
 /* FOOTER */
 .flex-bl-copyright {
@@ -744,6 +666,19 @@ footer .nav-footer .language>a::after{
 	    width: 73%;
         right: 34%;
 	}
+
+/* Getting Started with NetherexPro */
+	.flash_step2 {
+	    background-size: cover;
+	    height: 300px;
+	}
+	.step__description h1 {
+		font-size: 18px;
+	}
+	.step__description {
+		max-width: 75%;
+	}
+
 }
 
 @media (max-width: 768px) {
@@ -903,6 +838,19 @@ footer .nav-footer .language>a::after{
 	}
 	.benefit-line { display: none; }
 	.benefit__col span { text-align: center; }
+
+/* Getting Started with NetherexPro */
+	.steps__cards {
+		flex-direction: column;
+		margin-top: 50px;
+	}
+	.step__card:hover .step__description {
+	    left: 50%;
+	}
+	.step__description {
+		left: 50%;
+	}
+
 }
 
 @media (max-width: 425px) {
@@ -929,6 +877,18 @@ footer .nav-footer .language>a::after{
 	.trading_rocket { display: none; }
 	.container__trading__details { width: 100%; align-items: center; }
 	.container__trading__details__info button { margin: 0 auto; margin-top: 20px; }
+
+/* Getting Started with NetherexPro */
+	.step__card:nth-child(1), .step__card:nth-child(3) { 
+		margin-right: 0; 
+		margin-left: 0; 
+	}
+	.step__img { margin: 0; }
+	.step__description { bottom: 2rem; }
+	.step_line { 
+		background-size: cover;
+		height: 80px; 
+	}
 }
 
 @media (max-width: 375px) {
@@ -939,6 +899,13 @@ footer .nav-footer .language>a::after{
 	.block__description__btn { font-size: 12px; }
 	.flash_why_we { width: 100%!important; }
 	.block__title-2 { font-size: 19px; text-align: left; }
+	.flash_step2 {
+		background-size: cover;
+		height: 100%;
+	}
+	.step__description { bottom: 1.5rem; }
+	.step__description h1 { font-size: 18px; }
+	.step_line { height: 60px; }
 }
 
 @media (max-width: 320px) {
@@ -948,4 +915,8 @@ footer .nav-footer .language>a::after{
 	.block__description p { font-size: 10px; }
 	.block__description__btn { font-size: 10px; }
 	.flash_why_we { width: 100%!important; }
+	.title_started { font-size: 21px; }
+	.step__description { bottom: 1.5rem; }
+	.step__description h1 { font-size: 15px; }
+	.step_line { height: 50px; }
 }

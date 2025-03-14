@@ -1,0 +1,37 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1366 167" width="1366" height="167">
+	<title>3 угла</title>
+	<defs>
+		<radialGradient id="g1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(71.9,0,0,71.9,663.4,66.1)">
+			<stop offset="0" stop-color="#178f90" stop-opacity=".8"/>
+			<stop offset=".2" stop-color="#178f90" stop-opacity=".6"/>
+			<stop offset=".3" stop-color="#178f90" stop-opacity=".4"/>
+			<stop offset=".5" stop-color="#178f90" stop-opacity=".2"/>
+			<stop offset=".6" stop-color="#178f90" stop-opacity="0"/>
+			<stop offset=".8" stop-color="#178f90" stop-opacity="0"/>
+			<stop offset="1" stop-color="#178f90" stop-opacity="0"/>
+		</radialGradient>
+		<linearGradient id="g2" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1172.3,0,0,66.1,86,99.9)">
+			<stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+			<stop offset=".2" stop-color="#94e7ed" stop-opacity=".4"/>
+			<stop offset=".4" stop-color="#44d5e1" stop-opacity=".7"/>
+			<stop offset=".5" stop-color="#12cad9" stop-opacity=".9"/>
+			<stop offset=".6" stop-color="#00bbca" stop-opacity=".9"/>
+			<stop offset=".7" stop-color="#009eab" stop-opacity=".8"/>
+			<stop offset=".8" stop-color="#006f78" stop-opacity=".6"/>
+			<stop offset=".9" stop-color="#002f33" stop-opacity=".2"/>
+			<stop offset="1" stop-color="#000000" stop-opacity="0"/>
+		</linearGradient>
+	</defs>
+	<style>
+		.s0 { fill: url(#g1) } 
+		.s1 { fill: none;stroke: url(#g2);stroke-miterlimit:10;stroke-width: 2 } 
+		.s2 { fill: #bbfffd } 
+	</style>
+	<g>
+		<g id="_Слой_2">
+			<path fill-rule="evenodd" class="s0" d="m624 209c-66.9 0-121-54.1-121-121 0-66.9 54.1-121 121-121 66.9 0 121 54.1 121 121 0 66.9-54.1 121-121 121z"/>
+			<path fill-rule="evenodd" class="s1" d="m86 133h288.5l289.5-66.1 295.5 66.1h298.8"/>
+			<path fill-rule="evenodd" class="s2" d="m664.5 75c-4.7 0-8.5-3.8-8.5-8.5 0-4.7 3.8-8.5 8.5-8.5 4.7 0 8.5 3.8 8.5 8.5 0 4.7-3.8 8.5-8.5 8.5z"/>
+		</g>
+	</g>
+</svg>
