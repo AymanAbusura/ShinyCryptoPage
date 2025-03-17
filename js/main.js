@@ -30,6 +30,19 @@ window.onload = function() {;
 	setupToggle('mobile-toggle');
 	setupToggle('toggle-1');
 
+	// Scroll
+	var buttons = document.querySelectorAll(".scroll_btn");
+	var form = document.getElementById("form");
+	if (buttons.length > 0) {
+		for (var i = 0; i < buttons.length; i++) {
+			buttons[i].addEventListener("click", function() {
+				form.scrollIntoView({
+					behavior: "smooth"
+				});
+			});
+		}
+	}
+
 	// FAQ
 	function toggleReadMore(button) {
 		var moreText = button.previousElementSibling.querySelector(".more-text");
