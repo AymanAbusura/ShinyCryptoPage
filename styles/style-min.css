@@ -667,10 +667,10 @@ textarea{
 .holder__body .title-2,.holder__body .txt,.holder__body p{
 	color:#fff
 }
-.join .btn{
+/*.join .btn{
 	margin:20px 0 0;
 	max-width:320px
-}
+}*/
 .faq{
 	background: #000;
 }
@@ -1250,12 +1250,12 @@ table p+p{
 		-ms-transform:translate(-100%,0);
 		transform:translate(-100%,0)
 }
-	.join .btn{
+	/*.join .btn{
 		max-width:-webkit-max-content;
 		max-width:-moz-max-content;
 		max-width:max-content;
-		margin:20px auto 0
-}
+		margin:60px auto 0
+}*/
 	.faq__column{
 		margin:0;
 		max-width:350px
@@ -1482,8 +1482,8 @@ input[type="text"]:focus,input[type="email"]:focus,input[type="tel"]:focus {
 	position: absolute;
 }
 .form__wrapper-loader.loader,.api-error.loader {
-/*	display: block;*/
-	display: none;
+	display: block;
+/*	display: none;*/
 }
 .iti--separate-dial-code.iti--show-flags .iti__selected-dial-code {
 	margin-left: 6px;

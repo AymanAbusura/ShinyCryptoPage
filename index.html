@@ -201,7 +201,7 @@
                 <div class="container__trading__details">
                     <img src="assets/coin.webp" class="coin">
                     <div class="container__trading__details__info">
-                        <p class="numbers">4.9<span class="different">/5.0</span></p>
+                        <p class="numbers bold-text">4.9<span class="different bold-text">/5.0</span></p>
                         <p class="number__info">Overall platform assessment</p>
                         <button class="cta-button scroll_btn uppercase">Explore Now</button>
                     </div>
@@ -341,6 +341,7 @@
 
         <section class="faq-section">
             <div class="faq-container">
+                <div class="flash_why_we flash_faq"></div>
                 <div class="faq-image">
                     <img src="assets/faq.webp" alt="FAQ Image">
                     <button class="cta-button faq_contact_btn">Contact us</button>
@@ -526,7 +527,7 @@
             input.addEventListener('input', () => validateInput(input));
         });
 
-        const form = document.getElementById('myform');
+        const form = document.getElementById('form');
 
         form.addEventListener('submit', function (event) {
             inputs.forEach(input => validateInput(input));

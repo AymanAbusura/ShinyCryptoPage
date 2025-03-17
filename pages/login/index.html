@@ -223,7 +223,7 @@ For those who have created an account, just enter your details at the login page
                     .catch(() => callback("us"));
             },
             autoPlaceholder: 'aggressive',
-            utilsScript: "js/utils.js",
+            utilsScript: "../../js/utils.js",
         });
 
         document.getElementById('phone').addEventListener('countrychange', function () {
@@ -288,7 +288,7 @@ For those who have created an account, just enter your details at the login page
             input.addEventListener('input', () => validateInput(input));
         });
 
-        const form = document.getElementById('myform');
+        const form = document.getElementById('form');
 
         form.addEventListener('submit', function (event) {
             inputs.forEach(input => validateInput(input));
